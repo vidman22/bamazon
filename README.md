@@ -7,3 +7,5 @@ If the quantity desired exceeds the stock quantity, the customer will be notifie
 Upon completing the purchase the customer will be notified of the total cost and the stock database will be updated to reflect the purchase.
 
 This app us cli-table, inquirer, mysql, and node.js.
+
+Video of application here: https://www.youtube.com/watch?v=skuhX7nI1Gg&feature=youtu.be
