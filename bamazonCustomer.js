@@ -70,7 +70,7 @@ function start() {
 ]).then(function(answer) {
 	var chosenId = parseInt(answer.id);
 	var amount = parseInt(answer.amount);
-	console.log(chosenId + " " + amount);
+	// console.log(chosenId + " " + amount);
 
 
 	
@@ -84,7 +84,10 @@ function start() {
 			start();
 		} else {
 			var updatedAmount = data[0].stock_quantity - amount;
-			console.log(updatedAmount);
+			// console.log(updatedAmount);
+			var cost = amount * data[0].price;
+			console.log("you bought " + amount + " items of " + data[0].product_name + " for a total of $" + cost);
+
 			connection.query("UPDATE products SET stock_quantity = ? Where id = ?", [updatedAmount, chosenId], function(err, data) {
 				if (err) throw err;
 				else {
