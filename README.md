@@ -8,4 +8,4 @@ Upon completing the purchase the customer will be notified of the total cost and
 
 This app us cli-table, inquirer, mysql, and node.js.
 
-Video of application here: https://www.youtube.com/watch?v=skuhX7nI1Gg&feature=youtu.be
+Video of application here: https://youtu.be/skuhX7nI1Gg

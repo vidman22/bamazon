@@ -53,7 +53,7 @@ connection.query("SELECT * FROM products", function(err, res) {
 
 		
 
-
+// Inquire of the user with inquirer questions
 function start() {
 	inquirer.prompt ([
 		{
@@ -74,7 +74,7 @@ function start() {
 
 
 	
-	
+	// Update the database
 
 	connection.query("SELECT * FROM products WHERE ?", [{id: chosenId}], function(err, data) { 
 		if (err) throw err;
